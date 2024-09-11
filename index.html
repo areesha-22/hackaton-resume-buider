@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <title> Interactive Resume</title>
+  <Author>AREESHA ABDUL RAHIM</Author>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      
+    }
+  .profile{
+    position: relative;
+    right: 400px;
+    bottom: 150px;
+  }
+
+    .header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .header h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .section li {
+      margin-bottom: 5px;
+    }
+
+    .section li span {
+      font-weight: bold;
+    }
+
+    .contact {
+      margin-bottom: 20px;
+    }
+
+    .contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .contact li {
+      margin-bottom: 5px;
+    }
+
+    .contact li span {
+      font-weight: bold;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    #codeBlock {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 5px;
+            
+            border: 2px solid #000000;
+           
+        }
+
+        button {
+          font-size: x-large;
+            padding: 10px 15px;
+            background-color: aqua;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    .skills {
+      margin-bottom: 10px;
+    }
+
+  
+
+     
+   
+
+    
+   
+   
+   
+     
+  </style>
+</head>
+<body>
+  <div class="container">
+    <HEADER>
+    <div class="header">
+     
+      <h1>AREESHA QURESHI</h1>
+      <h2 style="color: aqua;">WEB DEVELOPER</h2>
+      <div class="profile" >
+      
+      <img src="./image/young-woman-ready-job-business-600nw-2250947327.webp" alt="my image" 
+      style=" width: 250px;
+      height: 250px; 
+      border-radius: 50%; 
+      object-fit: cover">
+      </div>
+    </div><HR>
+
+    <div class="section">
+      <h3 style="color: aqua;">CONTACT</h3>
+      <div class="contact">
+        <ul>
+          <li><span>   <i class="fa-solid fa-phone"></i></span> +92 313 361-34-30</li>
+            <!-- link daina hai email ka -->
+          <li><span> <i class="fa-solid fa-envelope"> </i></span> <a href="mailto:">areesharaheem22@gmail.com</a></li>
+           <li><span> <i class="fa-solid fa-house"></i></span>Unit no 8 LAT HYD</li>
+        </ul>
+      </div>
+    </div>
+</HEADER>
+<main>
+    <div class="section">
+        <h3 style="color: aqua;"> <i class="fa-solid fa-person"></i>    PERSONAL INFORMATION</h3>
+      <div class="timeline">
+        <div class="timeline-left">
+            <div style="display: flex; gap: 40px;">
+            <ul>
+          <h4><li>Name:</li>
+          <li>Father Name:</li>
+          <li>Religion:</li>
+          <li>Sur Name:</li>
+          <li>Place of DOB:</li>
+          <li>Martial status:</li></h4>
+        </ul>
+        <ul style="position: relative; top: 20px;">
+            <li>Areesha</li>
+            <li>Abdul Rahim</li>
+            <li>Islam</li>
+            <li>Qureshi</li>
+            <li>Hyderabad</li>
+            <li>Single</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h3 style="color: aqua;"><span><i class="fa-solid fa-user-graduate"></i> </span>EDUCATION</h3>
+      <div class="timeline">
+        <div >
+          <h4>UNIVERSITY</h4>
+          <p>Bachelor in Mathematics Countinue...<br></p>
+          <h4>COLLAGE</h4>
+          <P>2021-2023</P>
+          <P>APSSRC HYD</P>
+          <H4>SCHOOL</H4>
+          <p>2019-2020</p>
+          <P>APSSRC HYD</P>
+          <H4>English Language Course</H4>
+          <p>Stardford Academy</p>
+        </div>
+      </div>
+
+   
+    </div>
+    <button onclick="toggleCode()">PROFESSIONAL SKILLS</button>
+
+    <div id="codeBlock">
+        <pre>
+            <div class="timeline">
+              </div>
+              HTML
+              css
+              JAVASCRIPT
+              TYPESCRIPT
+        </div>
+      </pre>
+            <script>
+              function toggleCode() {
+                  var codeBlock = document.getElementById('codeBlock');
+                  if (codeBlock.style.display === 'none') {
+                      codeBlock.style.display = 'block';
+                  } else {
+                      codeBlock.style.display = 'none';
+                  }
+              }
+          </script>
+          
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 style="color: aqua;">LANGUAGES</h3>
+      <div class="languages">
+        <ul>
+          <li><span>English:</span> Fluent</li>
+          <li><span>Urdu:</span> Fluent</li>
+        </ul>
+      </div>
+    </div>
+
+    
+</main>
+  </div>
+  <script src="C:\Users\FUTURE TECH HYD\Desktop\HACKATON1\hack.js"></script>
+</body>
+</html>
