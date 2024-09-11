@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c2b6b6;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  h1 {
+    text-align: center;
+    color: #5a3d35; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+  }
+  
+  form {
+    margin-bottom: 70px;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    padding: 15px; 
+    background-color: #f9f9f9; 
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 18px; 
+    color: #5a3d35; 
+    padding: 0 10px; 
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6b6b6b; 
+  }
+  
+  input, textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #948f8f;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff; 
+  }
+  
+  
+  button {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    width: 200px;
+    height: 80px;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /
+  }
+  
+  button:hover {
+    background-color: #5a3d35; 
+  }
+  
+  .resume-output {
+    margin-top: 40px;
+  }
+  
+  .resume-output h2 {
+    margin-bottom: 10px;
+    color: #4a342e; /
+  }
+  
+  .resume-output p {
+    margin-bottom: 20px;
+    color: #6b6b6b; 
+  }

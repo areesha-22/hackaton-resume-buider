@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editabel Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1>DYNAMIC RESUME GENERATOR</h1>
+
+    <form id="resume-form">
+      <fieldset>
+       <legend>PERSONAL INFORMATION</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+   <div><br>
+<label for="father">FATHERNAME:</label>
+<INPUT id="father" placeholder="Enter your fathername"  class="input"type="text" autocomplete="off">
+</div><br> 
+<div>
+    <label for="surname">SURNAME:    </label>
+    <input id="surname" placeholder="Enter your surname" class="input" type="terxt" autocomplete="off">
+</div><br> 
+ <div>
+    <label for="religion">RELIGION:  </label>
+    <input id="religion" type="text" class="input"autocomplete="off">
+</div><br> 
+
+<i class="fa-solid fa-envelope"></i><label for="email">Email:</label>
+      <input type="email" id="email" name="email" required> <BR>
+<BR>
+  <i class="fa-solid fa-phone"></i> <label for="phone-no">Phone-no:</label>
+      <input type="phone-no" id="phone-no" name="phone-no" required> 
+   <div><BR>
+    <label for="PROVINCE" class="input">PROVINCE:</label>
+    <select name="live" id="PROVINCE">
+        <option value="SINDH">SINDH</option>
+        <option value="PUNJAB">PUNJAB</option>
+        <option value="BALOCHISTAN">BALOCHISTAN</option>
+        <option value="K.P.K">KPK</option> 
+        <option value ="GILGIT">GILGIT</option>
+        </select>
+    </div><br>
+ <div>
+        <label for="birthdate">SELECT BIRTHDATE:  </label>
+        <input id="birthdate"  class="input"type="date">
+    </div><Br>
+   <section>
+   
+                <label for="STATUS">STATUS: </label>
+                <input id="STATUS"   name="version"type="radio" value="Single">Single
+                <input id="STATUS"  name="version" type="radio" value="Married">Married
+            </div>
+
+            
+      </fieldset>
+     <h2 >QUALIFICATION:</h2>
+      <textarea id="QUALIFICATION" name="QUALIFICATION" rows="5"  cols="40"></textarea>
+
+      <h2>Work Experience:</h2>
+      <textarea id="work-experience" name="workExperience" rows="5"  cols="40"></textarea>
+
+      <h2>Skills:</h2>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-output" class="resume-output">
+      <!-- Generated Resume will appear here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
